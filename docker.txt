@@ -1,0 +1,28 @@
+PATH in Ubuntu 
+mkdir docker_data
+
+sudo docker build -f Dockerfile --no-cache -t docker_tutorial .
+sudo docker run -ti docker_tutorial /bin/bash
+
+Ctrl-D
+sudo docker system prune -a --volumes
+docker cp <docker-container>:<file-localtion inside container> <host-path-location>
+
+
+conda 
+python
+conda activate ml
+
+
+cd src/
+source activate ml
+python train.py
+
+requirements.txt
+Flask==1.1.1
+numpy==1.17.4
+pandas==1.0.4
+torch==1.6.0
+tqdm==4.46.1
+transformers==2.11.0
+scikit-learn==0.23.1
